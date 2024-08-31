@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif !important;
+  background: #f9fafb;
+}
+
+header {
+  width: 100%;
+  height: 69px;
+  background: #ffffff;
+  position: fixed;
+  z-index: 1000;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+
+header button.rounded-circle {
+  min-width: 50px !important;
+  width: 50px !important;
+  height: 50px !important;
+  /* color: #10b981; */
+  background: #f9fafb;
+  font-size: 21px;
+  transition: all 0 3s ease-in-out;
+}
+
+header button.rounded-circle:hover svg {
+  color: #10b981;
+}
+
+.searchBox {
+  width: 400px;
+  height: 39px;
+  background: #f9fafb;
+  border-radius: 6px;
+  padding: 3px 15px;
+  cursor: pointer;
+}
+
+.searchBox input {
+  background: transparent;
+  border: 0px;
+  outline: none;
+  padding-left: 0px;
+  font-size: 15px;
+  flex: 1;
+}
+
+.searchBox svg {
+  font-size: 18px;
+  transition: all 0 2s ease-in-out;
+  /* color: #10b981; */
+}
+
+.searchBox svg :hover {
+  color: #10b981;
+}
+
+.searchBox input ::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "DM Sans", sans-serif !important;
+
+}
+
+button.rounded-circle svg {
+  color: black;
+}
+
+.myAcc {
+  text-align: left !important;
+  color: #10b981 !important;
+  text-transform: capitalize !important;
+}
+
+.userImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  /* padding: 1px; */
+  /* border-radius: 100%; */
+}
+
+.userImg .rounded-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.userImg .rounded-circle img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.myAcc .userInfo {
+  padding-left: 10px;
+}
+
+.myAcc .userInfo h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.myAcc .userInfo p {
+  margin-top: 0px;
+  font-size: 12px;
+  color: black;
+  opacity: 0.7;
+}
+
+#account-menu li {
+  font-size: 15px !important;
+}
+
+#account-menu svg {
+  font-size: 21px !important;
+}
+
+#notifications .MuiPaper-elevation {
+  right: 240px !important;
+  left: auto !important;
+  width: 300px;
+}
+
+.dropdownInfo {
+  padding-left: 15px;
+}
+
+.dropdownInfo h6 {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: break-spaces;
+  line-height: 21px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.dropdownInfo h6 b {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.dropdownInfo p{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.text-order {
+  background: #d1fae5;
+  color: #10b981 !important;
+  font-weight: 500 !important;
+}
+
+.text-order-date {
+  font-size: 12px;
+  color: gray;
+}
+
+.dropdown_list .scroll {
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.main .sidebarWrapper {
+  width: 20%;
+  flex: 0 0 20%;
+  transition: all 0.3s ease-in-out
+}
+
+.main .sidebarWrapper .sidebar {
+  width: 20%;
+  height: 100vh;
+  /* max-height: calc(100%-69px); */
+  max-height: calc(100% - 69px);
+
+  position: fixed;
+  top: 69px;
+  /* height of header=top */
+  left: 0px;
+  background: #ffff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+}
+
+.main .sidebarWrapper .sidebar ::-webkit-scrollbar {
+  width: 3px; 
+}
+
+.main .sidebarWrapper .sidebar ::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
+
+.main .sidebarWrapper:hover .sidebar ::-webkit-scrollbar {
+  background: #10b981 !important;
+}
+
+.main .sidebarWrapper .sidebar ul {
+  margin-bottom: 0px;
+  padding: 10px 15px;
+}
+
+.main .sidebarWrapper .sidebar ul li {
+  list-style: none;
+}
+
+.main .sidebarWrapper .sidebar ul li button {
+  /* color: #6b7280; */
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+  border-radius: 10px !important;
+  padding: 12px 10px !important;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px;
+
+}
+
+.main .sidebarWrapper .sidebar ul li button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 9px;
+}
+
+.main .sidebarWrapper .sidebar ul li button .icon svg {
+  color: #6b7280;
+  opacity: 0.7;
+  font-size: 22px;
+}
+
+.main .sidebarWrapper .sidebar ul li button .arrow {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+
+.main .sidebarWrapper .sidebar ul li button {
+  color: #6b7280 !important;
+}
+
+.main .sidebarWrapper .sidebar ul li button:hover {
+  color: #10b981 !important;
+}
+
+.main .sidebarWrapper .sidebar ul li button .active {
+  color: #10b981 !important;
+}
+
+.main .sidebarWrapper .sidebar ul li button:hover .icon svg {
+  color: #10b981 !important;
+}
+
+.main .sidebarWrapper .sidebar ul .submenu {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  padding-left: 23px;
+}
+.main .sidebarWrapper .sidebar ul .submenu ::before{
+content: '';
+width: 1px;
+height: 95%;
+position: absolute;
+top: 0px;
+left: 25px;
+background: rgba(107, 114, 128, 0.1) !important;
+}
+
+.main .sidebarWrapper .sidebar ul .submenu li {
+  width: 100%;
+  list-style: none;
+}
+
+.main .sidebarWrapper .sidebar ul .submenu li a {
+  color: #6b7280 !important;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.main .sidebarWrapper .sidebar ul .submenu li a:hover {
+color: #10b981 !important;
+}
+
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper{
+  transition: all 0.3s;
+  height: 0px;
+}
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper .collapsed .submenu{
+opacity: 0;
+overflow:hidden ;
+}
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper .collapse{
+  height: auto;
+overflow: inherit;
+}
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper .collapse .submenu{
+opacity: 1;
+height: auto;
+}
+
