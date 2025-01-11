@@ -6,6 +6,7 @@ import AdminLogin from './components/admin-login';
 import AdminDashboard from './components/admin-dashboard';
 import AddVideo from './components/add-video';
 import DeleteVideo from './components/delete-video';
+import EditVideo from './components/edit-video';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/admin-dash' element={<AdminDashboard/>}/>
           <Route path='/add-video' element={<AddVideo/>}/>
           <Route path='/delete-video/:id' element={<DeleteVideo/>}/>
+          <Route path='/edit-video/:id' element={<EditVideo/>}/>
           </Routes>
       </section>
       </BrowserRouter>
