@@ -4,6 +4,8 @@ import './App.css';
 import VideoLibraryIndex from './components/video-library-index';
 import AdminLogin from './components/admin-login';
 import AdminDashboard from './components/admin-dashboard';
+import AddVideo from './components/add-video';
+import DeleteVideo from './components/delete-video';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path='/' element={<VideoLibraryIndex />}/>
           <Route path='/admin-login' element={<AdminLogin/>}/>
           <Route path='/admin-dash' element={<AdminDashboard/>}/>
+          <Route path='/add-video' element={<AddVideo/>}/>
+          <Route path='/delete-video/:id' element={<DeleteVideo/>}/>
           </Routes>
       </section>
       </BrowserRouter>
