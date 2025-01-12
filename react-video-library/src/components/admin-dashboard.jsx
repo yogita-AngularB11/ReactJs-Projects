@@ -49,7 +49,7 @@ const AdminDashboard = () => {
                                     <td>
                                         <iframe src={video.Url} width="200" height="100" title="YouTube video player"></iframe>
                                     </td>
-                                    <td>
+                                    <td> 
                                         <Link to={`/edit-video/${video.VideoId}`} className='btn btn-warning bi bi-pen'></Link>
                                         <Link  to={`/delete-video/${video.VideoId}`} className='btn btn-danger bi bi-trash mx-2'></Link>
                                     </td>
