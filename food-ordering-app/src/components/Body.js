@@ -1,4 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
+
 export const resList = [{
     "info": {
       "id": "765152",
